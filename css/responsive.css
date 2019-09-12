@@ -33,9 +33,14 @@
     z-index: 1000;
   }
 
+  .inside #maincontent {
+    position: absolute;
+    top: 130px;
+  }
+
   .inside #map-container {
     background: blue none repeat scroll 0 0;
-    height: calc(100% - 146px);
+    height: calc(100% - 135px);
     position: fixed;
     right: 0;
     top: 80px;
@@ -48,6 +53,7 @@
   }
 
   .inside #footer {
+    position: fixed;
     bottom: 0;
   }
 
@@ -57,10 +63,6 @@
 
   #breadcrumb {
     width: calc(50% - 80px);
-  }
-
-  #maincontent {
-    width: 100%;
   }
 }
 
