@@ -152,19 +152,23 @@ createReviewHTML = (review) => {
   const name = document.createElement('p');
   name.innerHTML = review.name;
   name.className = "review-name";
+  name.setAttribute('aria-label', 'review name');
   li.appendChild(name);
 
   const date = document.createElement('p');
   date.innerHTML = review.date;
+  date.setAttribute('aria-label', 'review date');
   li.appendChild(date);
 
   const rating = document.createElement('p');
   rating.innerHTML = `<mark>Rating: ${review.rating}</mark>`;
   rating.className = "review-rating";
+  rating.setAttribute('aria-label', 'review rating');
   li.appendChild(rating);
 
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
+  comments.setAttribute('aria-label', 'review text');
   li.appendChild(comments);
 
   return li;

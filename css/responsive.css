@@ -1,8 +1,4 @@
 
-@media screen and (max-width: 650px) {
-  
-}
-
 @media screen and (min-width: 781px) and (max-width: 1140px) {
   #restaurants-list {
     width: 750px;
@@ -53,8 +49,6 @@
 
   .inside #footer {
     bottom: 0;
-    /* position: absolute;
-    width: 100%; */
   }
 
   #restaurant-container, #reviews-container {
